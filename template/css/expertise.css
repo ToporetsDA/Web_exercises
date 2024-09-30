@@ -1,0 +1,54 @@
+.expertise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 755px;
+}
+
+.expertise h2 {
+    padding-top: 70px;
+    text-transform: uppercase;
+}
+.expertise .subtitle {
+    font-family: 'Noto Serif', serif;
+    margin: 10px 0;
+}
+
+.expertise .divider {
+    width: 50px;
+    height: 2px;
+    background-color: rgba(65, 61, 75, 30%);
+    margin-bottom: 40px;
+}
+
+.expertise .card {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    min-height: 250px;
+    padding: 0 20px;
+    border-right: 1px solid rgba(0, 0, 0, 10%);
+}
+
+.expertise .card:last-child {
+    border-right: none;
+}
+
+.expertise .card-divider {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 10%);
+    clear: both;
+}
+
+.expertise .card i {
+    font-size: 50px;
+    margin: 30px 0;
+    color: #00E0D0;
+}
+
+.expertise .card .card-header {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(65,61,75,1);
+}

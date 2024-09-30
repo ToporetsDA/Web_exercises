@@ -1,0 +1,409 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
+    position: relative;
+    font-size: 14px;
+}
+@media screen and (min-width: 0px) {
+.page {
+    width: 440px;
+    margin: 0 auto;
+}
+}
+
+@media screen and (min-width: 1000px) {
+.page {
+    width: 1060px;
+}
+}
+
+.main_page {
+    display: flex;
+}
+
+a { 
+    font-size: 1.6em;
+    text-decoration: none;
+    color: #333;   
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #777;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+h5 {
+    color: #bbb;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 24px;
+    color: #222;
+}
+
+
+
+/*
+
+Header
+
+*/
+
+.main_photo {
+    margin-bottom: 78px;
+}
+
+@media screen and (min-width: 0px ) {
+.header {
+    display: flex;
+    margin-top: 50px;
+}
+
+.menu {
+    display: none;
+}
+.logo {
+    display: inline-block;
+    margin-left: 120px;
+}
+.logo img {
+    width: 200px;
+}
+}
+
+@media screen and (min-width: 1000px ) {
+.logo {
+    margin-right: 285px;
+}
+
+.header {
+    justify-content: flex-end;
+}
+
+.logo img { 
+    width: 125px;
+}
+/*
+.header a {
+    font-size: 1rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #777;
+    transition: all 0.5s ease;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.menu li a {
+    display: block;
+}
+
+.menu li {
+    display: block;
+}
+
+.header ul {
+    display: flex;
+    margin: 0;
+}
+
+.menu li a:hover {
+    background-color: #777;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.menu ul {
+    position: absolute;
+    padding-left: 0;
+    display: block;
+    z-index: -1;
+    opacity: 0;
+    transition: 
+        opacity 0.5s ease,
+        z-index 0s 0.5s;
+}
+
+.menu ul a {
+    padding: 12px;
+}
+
+.lifestyle {
+    min-width: 160px;
+}
+
+.photodiary {
+    min-width: 180px;
+}
+
+.menu ul li {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.menu ul li:first-child {
+    border-top: 1px solid #ccc; 
+}
+
+.menu li:hover ul {
+    z-index: auto;
+    opacity: 1;
+}*/
+}
+
+/*
+
+Posts
+
+*/
+
+.main_post h5 {
+    color: #ccc;
+}
+
+.main_post_content {
+    margin: 0 7.5%;
+}
+
+@media screen and (min-width: 0px ) {
+.comment {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.main_post img {
+    width: 100%;
+    margin: 0;
+}
+
+.last_posts {
+    margin: 0 7.5%;
+    justify-content: space-between;
+}
+}
+
+@media screen and (min-width: 1000px ) {
+.comment {
+    margin: 50px 0;
+}
+
+.main_post img {
+    margin-bottom: 50px;
+}
+
+.last_posts {
+    display: flex;
+}
+}
+
+@media screen and (min-width: 0px ) {
+    .posts {
+        height: 2100px;
+        display: block;
+        margin: 0 7.5%;
+        margin-top: 100px;
+        padding-bottom: 125px;
+    }
+
+    .post {
+        width: 100%;
+    }
+
+    .post img {
+    width: 100%;
+    }
+
+    .post p {
+        margin-bottom: 100px;
+    }
+
+    .post a {
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .posts_button {
+        outline: none;
+        margin-left: 17.5%;
+        margin-bottom: 75px;
+        width: 300px;
+        height: 120px;
+        font-size: 3rem;
+        background-color: rgba(0, 0, 0, 0%);
+        color: #5d5d5d;
+        border: 1px solid #5d5d5d;
+        cursor: pointer;
+        font-family: inherit;
+    }
+}
+
+@media screen and (min-width: 1000px ) {
+.posts {
+    height: 1100px;
+    display: inline-block;
+    margin: 0 7.5%;
+    margin-top: 100px;
+    padding-bottom: 125px;
+}
+
+.post {
+    float: left;
+    width: 50%;
+}
+
+.post img {
+    width: 420px;
+    height: 280px;
+}
+
+.post p {
+    max-width: 420px;
+    margin-bottom: 100px;
+}
+
+.post a {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.posts_button {
+    margin: auto 42.5%;
+    margin-bottom: 75px;
+    width: 16%;
+    height: 60px;
+    font-size: 1.5rem;
+}
+}
+
+/*
+
+Signup
+
+*/
+
+.sign_up {
+    height: 280px;
+    background-color: #f3f3f3;
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+
+.sign_form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.sign_up h3 {
+    text-align: center;
+    font-size: 32px;
+    margin: 0px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.sign_in {
+    outline: none;
+    font-size: 1.2rem;
+    height: 40px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0%);
+    border: none;
+    padding-left: 5px;
+}
+
+.sign_up button {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0%);
+    border: 0px solid;
+    width: 50px;
+    height: 40px;
+}
+
+.signing {
+    display: flex;
+    border-bottom: 1px solid black;
+    max-width: 400px;
+}
+
+
+/*
+
+Footer
+
+*/
+
+.footer {
+    height: 100px;
+    background-color: #f3f3f3;
+}
+
+.footer .content {
+    width: 75%;
+    height: 100px;
+    margin: 0 12.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 0px) {
+.left_footer_content {
+    margin-top: 41px;
+    margin-bottom: 41px;
+    color: #555;
+    width: 200px;
+}
+
+.right_footer_content {
+    color: #777;
+    width: 100px;
+    margin-top: 41px;
+    margin-bottom: 41px;
+}
+
+.footer .content {
+    width: 90%;
+    height: 100px;
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+@media screen and (min-width: 1000px) {
+.left_footer_content {
+    width: 230px;
+    margin-top: 41px;
+    margin-bottom: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_footer_content {
+    width: 160px;
+    margin-top: 41px;
+    margin-bottom: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .content {
+    width: 75%;
+    height: 100px;
+    margin: 0 12.5%;
+}
+}
+
+.footer a {
+    font-size: 1rem;
+}

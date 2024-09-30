@@ -1,0 +1,11 @@
+.share {
+    margin: 64px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.share a {
+    margin-left: 16px;
+    color: #b8b5ae;
+    font-size: 1.2em;
+}

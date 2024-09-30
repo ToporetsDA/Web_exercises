@@ -1,0 +1,89 @@
+.quotes {
+    height: 500px;
+    background: url("img/header_bg.png") center center no-repeat;
+    color: #fff;
+}
+
+.quotes .overlay {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.quotes .quotes-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quotes p {
+    color: inherit;
+}
+
+.quotes h2 {
+    font-size: 90px;
+    margin-top: -20px;
+}
+
+.quotes .quote-text {
+    width: 780px;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.quotes .quote-name-wrapper {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.quotes .quote-name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.quotes .quote-title {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 70%);
+}
+
+.quotes .switch {
+    display: flex;
+    align-items: center;
+}
+
+.quotes .switch .quote-face {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: 1px solid rgba(255, 255, 255, 0%);
+}
+
+.quotes .switch .quote-face:hover {
+    cursor: pointer;
+    border: 1px solid #00E0D0;
+}
+
+.quotes .switch .face-active {
+    width: 70px;
+    height: 70px;
+}
+
+.quotes .switch .face-1 { background-image: url(img/quotes/1.png); }
+.quotes .switch .face-2 { background-image: url(img/quotes/2.png); }
+.quotes .switch .face-3 { background-image: url(img/quotes/3.png); }
+.quotes .switch .face-4 { background-image: url(img/quotes/4.png); }
+.quotes .switch .face-5 { background-image: url(img/quotes/5.png); }
+
+.quotes .switch .switch-arrow {
+    margin: 0 20px;
+    font-size: 21px;
+    color: rgba(255, 255, 255, 70%);
+}
+
+.quotes .switch .switch-arrow:hover {
+    color: #00E0D0;
+    cursor: pointer;
+}

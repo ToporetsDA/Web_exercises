@@ -1,0 +1,74 @@
+
+/* About */
+
+.about {
+    height: 400px;
+}
+.about-logo {
+    width: 400px;
+    height: 100%;
+    float: left;
+    background-image: url("/img/logo_big.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.about-text h2, .about-text p {
+    margin-bottom: 20px;
+}
+
+.about-text h2{
+    text-transform: uppercase;
+}
+
+/*
+Video
+*/
+
+.video {
+    height: 550px;
+    background-color: #09052F;
+    background: url("/img/video.png") center center no-repeat;
+}
+
+.button-block {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-block button {
+    outline: none;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0%);
+    /* background: url("/img/play_button.png") center center no-repeat; */
+    border: 3px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-left: 5px;
+}
+
+.button-block button:hover {
+    color: #00E0D0;
+    border: 3px solid #00E0D0;
+}
+
+.button-block p {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: bold;
+}

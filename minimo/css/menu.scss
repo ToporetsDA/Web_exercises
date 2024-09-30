@@ -1,0 +1,113 @@
+@media screen and (min-width: 0px ) {
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px ) {
+
+@mixin trans($prop:all, $dur: 0.5s) {
+    transition-property: $prop; 
+    transition-duration: $dur;
+    transition-timing-function: ease;
+}
+
+%a_shared {
+    font-size: 1rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #777;
+    @include trans;
+    display: block;
+}
+    
+%li_shared {
+    display: block;
+}
+    
+%ul_shared {
+    list-style: none;
+    margin: 0;
+}
+
+%li_hover_ul_shared {
+    z-index: auto;
+    opacity: 1;
+}
+
+%a_hover_shared {
+    background-color: #777;
+    color: #ffffff;
+    @include trans;
+}
+
+.menu {
+    @extend %ul_shared;
+    display: flex;
+
+    li {
+        @extend %li_shared;
+
+        &:hover {
+            ul {
+                @extend %li_hover_ul_shared
+            }
+        }
+    }
+
+    a {
+        @extend %a_shared;
+
+        &:hover {
+            @extend %a_hover_shared
+        }
+    }
+
+    ul {
+        @extend %ul_shared;
+        position: absolute;
+        padding-left: 0;
+        display: block;
+        z-index: -1;
+        opacity: 0;
+        @include trans;
+
+        li {
+            @extend %li_shared;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-top: none;
+            
+            &:hover {
+                ul {
+                    @extend %li_hover_ul_shared;
+                }
+            }
+
+            &:first-child {
+                border-top: 1px solid #ccc;
+            }
+        }
+
+        a {
+            @extend %a_shared;
+            padding: 12px;
+            
+            &:hover {
+                @extend %a_hover_shared;
+            }
+        }
+    }
+}
+
+.lifestyle {
+    min-width: 160px;
+}
+
+.photodiary {
+    min-width: 180px;
+}
+
+}

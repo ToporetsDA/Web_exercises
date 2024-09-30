@@ -1,0 +1,62 @@
+.team {
+    height: 700px;
+    background: #09052F url("/img/team_bg.png") center center no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+.team p {
+    color: inherit;
+}
+
+.team h2 {
+    padding-top: 70px;
+    text-transform: uppercase;
+}
+.team .subtitle {
+    font-family: 'Noto Serif', serif;
+    margin: 10px 0;
+}
+
+.team .divider {
+    width: 50px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 30%);
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-member {
+    height: 308px;
+    width: 221px;
+    border: 1px solid rgba(255, 255, 255, 30%);
+    text-align: center;
+    overflow: hidden;
+}
+
+.team-member img {
+    height: 229px;
+    margin-left: -4px;
+}
+
+.team-member-name {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p.team-member-title {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 70%);
+}
+
+p.join-us {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}

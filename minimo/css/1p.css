@@ -1,0 +1,91 @@
+
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
+    position: relative;
+    font-size: 14px;
+}
+@media screen and (min-width: 0px) {
+.page {
+    width: 440px;
+    margin: 0 auto;
+}
+}
+
+@media screen and (min-width: 1000px) {
+.page {
+    width: 1060px;
+}
+}
+
+.main_page {
+    display: flex;
+}
+
+a { 
+    font-size: 1.6em;
+    text-decoration: none;
+    color: #333;   
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #777;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+h5 {
+    color: #bbb;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 24px;
+    color: #222;
+}
+
+
+
+/*
+
+Header
+
+*/
+
+
+.main_photo {
+    margin-bottom: 78px;
+}
+
+@media screen and (min-width: 0px ) {
+.header {
+    display: flex;
+    margin-top: 50px;
+}
+.logo {
+    display: inline-block;
+    margin-left: 120px;
+}
+.logo img {
+    width: 200px;
+}
+}
+
+@media screen and (min-width: 1000px ) {
+.logo {
+    margin-right: 285px;
+}
+
+.header {
+    justify-content: flex-end;
+}
+
+.logo img { 
+    width: 125px;
+}
+}

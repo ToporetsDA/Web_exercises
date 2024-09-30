@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(65,61,75,1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif', serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(65,61,75,0.75);
+    font-weight: 300;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0%);
+    color: #00E0D0;
+    border: 1px solid #00E0D0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0,224,208, 30%);
+}
+
+.overlay {
+    height: 100%;
+    background-color: rgba(9,5,47,0.8);
+}
+
