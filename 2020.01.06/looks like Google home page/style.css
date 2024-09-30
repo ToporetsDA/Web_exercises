@@ -1,0 +1,126 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+* {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(80, 80, 80);
+    font-size: 14px;
+    margin: 0;
+}
+div {
+    display: flex;
+}
+a {
+    margin: 0 15px ;
+}
+.img, .input, .inputDetails, .lang, .buttons{
+    justify-content: center;
+}
+.header {
+    margin: 15px 0 100px 0;
+    justify-content: flex-end;
+}
+ .header a {
+    margin: 0 15px ;
+    padding-top: 8px;
+}
+.header i{
+    width: 10px;
+    font-size: 30px;
+    padding: 0 3px;
+    color: rgb(150, 150, 150);
+}
+button {
+    background-color: rgb(45, 100, 252);
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    height:32px;
+    font-size:14px;
+    transition: all 0.2s ease-in-out;
+}
+button:hover {
+    transform: scale(1.1);
+}
+.logo {
+    font-size: 6.5rem;
+    margin-bottom: 10px;
+}
+.input {
+    margin-bottom: 20px;
+}
+.search {
+    display: block;
+}
+.search i {
+    width: 26px;
+    height: 26px;
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    left: 5px;
+    top: 4px;
+    color: rgb(150, 150, 150);
+}
+.inputDetails{
+    position: relative;
+    width: 260px;
+}
+input {
+    position: relative;
+    -webkit-appearance: none;
+    outline:none;
+    border: none;
+    border: solid 1px #c2c2c2;
+    padding-left: 15px;
+    width: 260px;
+    height: 30px;
+    padding-left: 30px;
+    border-radius: 15px;
+}
+.buttons button {
+    color: rgb(80, 80, 80);
+    margin: 0 10px;
+    background-color: rgb(240, 240, 240);
+}
+.lang {
+    height: 50px;
+    align-items: center;
+}
+.footer, .country {
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    height: 40px;
+}
+.footer {
+    justify-content: space-around;
+    bottom: 0;
+}
+.country {
+    bottom: 40px;
+    border: 1px solid rgb(180, 180, 180);
+}
+@media screen and (min-width: 640px) {
+    .header {
+        margin-bottom: 75px;
+    }
+    img {
+        width: 275px;
+    }
+    input {
+        width: 500px;
+    }
+    .footer {
+        justify-content: flex-end
+    }
+    .inputDetails{
+        width: 500px;
+    }
+}

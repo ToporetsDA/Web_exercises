@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+button {
+    min-width: 80px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#menu, #select-mode, #settings, #game, #results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#menu {
+    background-color: rgb(225, 155, 155);
+}
+
+#menu h1 {
+    text-transform: uppercase;
+}
+
+#select-mode {
+    background-color: rgb(155, 155, 255);
+}
+
+#settings {
+    background-color: rgb(155, 255, 155);
+}
+
+#settings select {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#themeChoise {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#setList {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+#game p {
+    font-size: 20px;
+    font-weight: 550;
+}
+
+#score {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 36px;
+}
+
+#score p {
+    font-size: 36px;
+}
+
+
+#game #header {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+#game #board {
+    display: flex;
+    width: 150px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+
+#game #board .tile {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#game #board #tile-0, #game #board #tile-1, #game #board #tile-2 { border-top: none; }
+#game #board #tile-2, #game #board #tile-5, #game #board #tile-8 { border-right: none; }
+#game #board #tile-0, #game #board #tile-3, #game #board #tile-6 { border-left: none; }
+#game #board #tile-6, #game #board #tile-7, #game #board #tile-8 { border-bottom: none; }
+
+#game #board .tile-hover:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#results {
+    background-color: aquamarine;
+}
+
+.current-player {
+    text-decoration: underline;
+}

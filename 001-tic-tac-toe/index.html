@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Tic tac toe</h1>
+        <button onclick="startNewScore()">Start</button>
+        <button onclick="showScreen('settings')">Settings</button>
+    </div>
+
+    <div id="select-mode">
+        <button onclick="selectMode(2, 'X')">X vs O</button>
+        <button onclick="selectMode(1, 'X')">X vs Computer</button>
+        <button onclick="selectMode(1, 'O')">O vs Computer</button>
+        <button onclick="showScreen('menu');">Back</button>
+    </div>
+
+    <div id="settings">
+        <p id="themeChoise">Color theme</p>
+        <div id="theme-buttons-container"></div>
+        <button onclick="showScreen('menu');">Back</button>
+    </div>
+
+    <div id="game">
+        <div>
+            <div id="header">
+                <p id="player-x">Player X</p>
+                <p id="player-o">Player O</p>
+            </div>
+            <div id="score">
+                <p id="score-x"></p>
+                <p>:</p>
+                <p id="score-o"></p>
+            </div>
+        </div>
+        <div id="board">
+            <div id="tile-0" class="tile tile-hover 0"></div>
+            <div id="tile-1" class="tile tile-hover 1"></div>
+            <div id="tile-2" class="tile tile-hover 2"></div>
+            <div id="tile-3" class="tile tile-hover 3"></div>
+            <div id="tile-4" class="tile tile-hover 4"></div>
+            <div id="tile-5" class="tile tile-hover 5"></div>
+            <div id="tile-6" class="tile tile-hover 6"></div>
+            <div id="tile-7" class="tile tile-hover 7"></div>
+            <div id="tile-8" class="tile tile-hover 8"></div>
+        </div>
+        <button onclick="startNewScore();">Back</button>
+    </div>
+
+    <div id="results">
+        <p id="winner-message"></p>
+        <button onclick="continueScore();">Play again</button>
+        <button onclick="showScreen('menu');">To menu</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
